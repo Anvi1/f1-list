@@ -1,5 +1,5 @@
 # F1List
-Please follow f1_Project_Overview.pdf document (https://github.com/Anvi1/f1-Angular-Project/blob/master/f1_Project_Overview.pdf) for better clarification and highlights on basic features and functinalities with scope of improvements including the screenshot of application.
+Please follow f1_Project_Overview.pdf document (https://github.com/Anvi1/f1-list/blob/master/f1_Project_Overview.pdf) for better clarification and highlights on basic features and functinalities with scope of improvements including the screenshot of application.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
