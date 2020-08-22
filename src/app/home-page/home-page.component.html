@@ -1,0 +1,61 @@
+<div class="header">
+    <span>F1 World Champions List 2005-15 </span>
+</div>
+
+<div class="container">
+    <div class="year-container">
+        <div class="year-select-label">
+            <label> Select Your Year</label>
+        </div>
+        <div class="year-select">
+            <div class="year-list-select" (click) = "displayYearList = !displayYearList; $event.stopPropagation()">
+                <label class="year-list-select-label">{{selectedYear}} </label>
+                <label class="select-arrow-label"><img class="select-arrow" src="assets/down_arrow.jpg"></label>
+            </div>  
+            <ul class="year-list-ul" *ngIf="displayYearList">
+                <li class="year-list-li" *ngFor="let year of yearList; let last = last" (click)="onYearSelect(year)" [ngClass]="{'last-child-no-border': last}">{{year}}</li>
+            </ul>    
+        </div>
+    </div>
+
+    <div class="records-container">
+        <div class="record-list-common race-list-container">
+            <div class="race-list-label">
+                <label>Races held in {{selectedYear}}</label>
+            </div>
+            <div class="race-list">
+                <div class="race-list-item" *ngFor="let race of seasonRaces; let last = last" (click)="onRaceSelect(race.circuitId)" [ngClass]="{'last-child-no-border': last, 'race-list-item-active': selectedCircuitId === race.circuitId}">
+                    {{race.raceName}}
+                </div>
+            </div>
+        </div>
+        <div class="record-list-common winner-list-container">
+            <div class="winner-list-label">
+                <label>Winners of {{selectedYear}}</label>
+            </div>
+            <div class="winner-list">
+                <table>
+                    <tr>
+                        <th>Driver</th>
+                        <th> Position</th>
+                        <th> Laps</th>
+                        <th> Grid</th>
+                        <th> Time</th>
+                        <th> Points</th>
+                    </tr>
+                    <tr class="winner-list-tr" *ngFor="let winner of raceWinners;" [ngClass]="{'highlight': winner?.driverInfo.driverId === worldChampion.driverId}">
+                      <td>{{winner?.driverInfo.givenName}} {{winner?.driverInfo.familyName}}</td>
+                      <td>{{winner.position}}</td>
+                      <td>{{winner.laps}}</td>
+                      <td>{{winner.grid}}</td>
+                      <td>{{winner?.time.time}}</td>
+                      <td>{{winner.points}}</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="winner-list-footer">
+                <div class="champion-indicator-label"> <div class="champion-indicator-color"></div> All Season's World Champion!</div>
+            </div>
+        </div>
+    </div>
+</div>

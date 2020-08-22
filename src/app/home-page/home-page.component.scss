@@ -1,0 +1,230 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    text-align: center;
+  }
+
+.container{
+    background-color: #01afef;
+    height: 100%;
+}
+
+ .year-container{ 
+    background-color: white;
+    padding: 1%;
+    color: black;
+ }
+
+ .year-select-label{
+    float: left;
+    font-size: 16px;
+    padding: 10px;
+
+ }
+
+ .year-select{
+    text-align: left;
+    width: calc(20% - 20px);
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    vertical-align: middle;
+ }
+ 
+ .year-list-select{
+    color: rgb(141 150 158);
+    font-size: 25px;
+    line-height: 1.43;
+    border-bottom: 1px solid #000;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+
+ .year-list-ul{
+    position: absolute;
+    top: 100%;
+    overflow-y: auto;
+    height: 323px;
+    left: 0px;
+    right: 0;
+    background-color: #fff;
+    min-width: auto;
+    margin: 0;
+    padding: 0 17px;
+    list-style-type: none;
+    z-index: 2;
+    color: black;
+    margin-top: 0px;
+    box-shadow: -4px 5px 10px -4px rgba(0,0,0,0.5);
+ }
+
+ .year-list-li{
+    padding: 10%;
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+    -webkit-transition: all ease .35s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
+    text-decoration: none;
+    display: block;
+ }
+
+ .year-list-li:hover{
+    color: #01afef !important;
+ }
+
+ .last-child-no-border{
+  border-bottom: none !important;
+ }
+
+ .year-list-select-label{
+    width: 80%;
+    float: left;
+    cursor: pointer;
+ }
+
+ .select-arrow-label{
+   width: 20%;
+   float: right;
+   padding-top: 5px;
+   cursor: pointer;
+ }
+
+ .select-arrow{
+    width: 25px;
+ }
+
+ .records-container{
+   height: 100%;
+ }
+
+ .record-list-common{
+   background-color: white;
+   float: left;
+   padding: 10px;
+   margin: 2%;
+   height: 70%;
+   box-shadow: -4px 5px 10px -4px rgba(0,0,0,0.5);
+   border-radius: 4px;
+ }
+
+ .race-list-container{
+    width: 40%;
+ }
+
+ .winner-list-container{
+   width: calc(54% - 40px);
+   margin-left: 0;
+   background: #f1f1f1;
+}
+
+.race-list-label{
+   background-color: black;
+   position: fixed;
+   width: calc(39% - 10px);
+   color: white;
+   margin-bottom: 2%;
+   padding: 10px;
+   font-size: 15px;
+   font-weight: bold;
+   box-shadow: -4px 5px 10px -4px rgba(0,0,0,0.5);
+}
+
+.race-list{
+   margin-top: 45px;
+   overflow-y: auto;
+   height: auto;
+   max-height: 90%;
+}
+
+.race-list-item{
+   padding: 15px;
+   color: #01afef;
+   font-weight: bold;
+   border-bottom: 1px solid #8d969e70;
+   cursor: pointer;
+}
+
+.race-list-item-active, .race-list-item:hover{
+   background: #01afef;
+   color: white;
+   box-shadow: -4px 5px 10px -4px rgba(0,0,0,0.5);
+}
+
+.winner-list-label{
+   position: fixed;
+   width: calc(53% - 50px);
+   color: white;
+   background-color: black;
+   margin-bottom: 2%;
+   padding: 10px;
+   font-size: 15px;
+   font-weight: bold;
+   box-shadow: -4px 5px 10px -4px rgba(0,0,0,0.5);
+
+}
+
+.winner-list{
+   margin-top: 45px;
+   overflow-y: auto;
+   height: auto;
+   max-height: 90%;
+}
+
+.winner-list-item{
+   padding: 15px;
+   color: #65c6f4;
+   font-weight: bold;
+   border-bottom: 1px solid #ffffff85;
+   cursor: pointer;
+}
+
+table, th, td {
+   padding: 10px;
+   width: 100%;
+ }
+ table {
+   border-spacing: 3px;
+ } 
+
+th{
+   background-color: #01afef;
+   
+} 
+td{
+   text-align: center;
+}
+
+.winner-list-tr{
+   background: white;
+}
+
+.highlight{
+   background: #c51130;
+}
+
+.winner-list-footer{
+   margin-top: 20px;
+   text-align: right;
+}
+
+.champion-indicator-color{
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: #c51130;
+}
+
+.champion-indicator-label{
+   width: 36%;
+   float: right;
+}
+
+ 
